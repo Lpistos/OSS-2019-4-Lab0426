@@ -14,7 +14,7 @@ do
 		echo "$SECONDS"
 		echo >> log.txt "$SECONDS"
 		start=$SECONDS
-		
+
 		RAND=$RANDOM
 		if [[ $((RAND%3)) -eq 0 ]]
 		then
@@ -22,5 +22,6 @@ do
 			echo >> log.txt "$SPOILER"
 		fi
 	fi
+	sleep 2
 done
 
